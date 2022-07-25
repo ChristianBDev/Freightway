@@ -12,18 +12,18 @@ html {
 
 body {
   min-height: 100vh;
-  border: 2px solid green;
 }
 
-header {
+header, footer {
   background: #00235D;
+  padding: 10px;
 }
 
 li{
   padding: 20px;
 }
 
-a {
+a, p {
   text-decoration: none;
   color: white; 
 }
@@ -33,17 +33,61 @@ a {
   align-items: center;
   justify-content: center;
   min-width: 100%;
-  padding: 10px;
-  border: 1px solid red;
 }
 
 .logo {
   width: 150px;
+  margin-left: 12rem;
+  margin-right: 8rem;
 }
 
-.container, .left, .right {
+.nav, .left, .right {
   display: flex;
   list-style-type: none;
-  padding-left: 30px;
-  padding-right: 30px;
+}
+
+#slider {
+  overflow: hidden;
+  justify-content: center;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  animation: 25s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {left: 0}
+  20% {left: 0%}
+  25% {left: -100%}
+  45% {left: -100%}
+  50% {left: -200%}
+  65% {left: -200%}
+  70% {left: -300%}
+  85% {left: -300%}
+  95% {left: -400%}
+  100% {left: -400%;}
+}
+
+.footer-left {
+  display: flex;
+  list-style-type: none;
+  margin-right: 10rem;
+}
+
+.footer-right {
+  display: flex;
+  list-style-type: none;
+  margin-left: 10rem;
+}
+
+.social {
+  height: 35px;
+  padding: 3px;
 }
