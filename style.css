@@ -295,7 +295,7 @@ section {
 }
 
 .social:hover {
-  transform: scale(100%);
+  transform: scale(75%);
 }
 
 .stats_list {
