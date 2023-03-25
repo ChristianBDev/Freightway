@@ -294,7 +294,7 @@ section {
   padding: 3px;
 }
 
-.social:hover {
+img > .social:hover {
   transform: scale(75%);
 }
 
